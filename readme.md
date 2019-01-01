@@ -7,9 +7,10 @@
 
 后台管理 效果图：
 ![首页](https://img-blog.csdnimg.cn/20181028230729110.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21laW1laWVlZQ==,size_27,color_FFFFFF,t_70)
-
+![发布页](https://img-blog.csdnimg.cn/20181028225512313.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21laW1laWVlZQ==,size_27,color_FFFFFF,t_70)
 
 扫一扫，就可以体验
+![体验二维码](https://yunyii.oss-cn-beijing.aliyuncs.com/2018/10/1540723097.png)
 
 
 
