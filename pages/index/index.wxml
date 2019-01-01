@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+
+<view class="weui-tab" >
+    <view class="weui-navbar">
+        <block wx:for-items="{{tabs}}" wx:key="{{index}}">
+            <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                <view class="weui-navbar__title">{{item}}</view>
+            </view>
+        </block>
+    </view>
+    <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+            <include src="listData.wxml" />
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+            <include src="listData.wxml" />
+        </view>
+    </view>
+</view>
+
+
+<view hidden="{{hidden}}" class="loading">
+  <view class="loadingImg"><image src="/image/loading.gif" mode="aspectFill"></image></view>
+  <view class="loadingTxt">..加载中..</view>
+</view>
+
+<view class="displayNo" hidden="{{display}}">
+  <image src="/image/Noline.png" mode="widthFix"></image>
+</view>
+
+</view>

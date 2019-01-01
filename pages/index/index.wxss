@@ -1,0 +1,98 @@
+/**index.wxss**/
+page{
+  background: #EEEDF2
+}
+.item{
+  width: 86%; height: auto; background: #fff; margin:0 3% 20rpx 3%; padding: 4%
+}
+.textCms{ width: 100%; color: #333;}
+.viPhoto{ width: 100%;  padding-top: 20rpx}
+.wiPhoto{
+  width: 100%; height: 350rpx; overflow: hidden;
+}
+.textBg-a,.textBg-b{
+  width: 100%; border-bottom: 2rpx #F5F5F5 solid; margin-bottom: 40rpx; color: #999; padding-bottom: 30rpx
+}
+.textBg-a image,.textBg-b image{
+  width: 29px; height: 20px;
+}
+.poster{
+  width: 100%; opacity:0.6; z-index: 8
+}
+
+.UserName{
+  display:flex; flex-direction:row;
+  padding-bottom: 20rpx; margin-bottom: 10rpx
+}
+.UserName .UserPic{
+  flex: 4;
+  height: 80rpx;overflow: hidden
+}
+.UserName .UserPic image{width: 72rpx; height: 72rpx; border-radius: 50%; border: 2rpx #e3e3e3 solid; padding: 2rpx; background:#fff}
+
+.UserName .UserPic text{
+  width: 300rpx; 
+  height: 80rpx; 
+  line-height: 80rpx; 
+  margin-left: 10rpx; 
+  position:  absolute;
+  overflow: hidden;
+  color: #666
+}
+
+.UserName .UserDate-a,.UserName .UserDate-b{
+  flex: 2;
+  text-align: left; height: 50rpx; line-height: 50rpx; color: #B4B4B4;
+  margin-top: 15rpx
+}
+.UserDate-a{ border-right: 6rpx #00AC2C solid}
+.UserDate-b{ border-right: 6rpx #FF9428 solid}
+
+.loading{
+  padding: 80rpx 0; color: #999;
+}
+.loadingImg{
+  width: 100%; padding-bottom: 10rpx; text-align: center
+}
+.loadingImg image{ width: 20px; height: 20px}
+.loadingTxt{
+  width: 100%; text-align: center; color: #999
+}
+.datetime{ font-size: 26rpx; color: #CDCDCD; width: 100%; padding-top: 20rpx; border-top: 2rpx #F5F5F5 solid; margin-top: 40rpx; display: flex; }
+.datetime .pl{
+ flex: 1; text-align: left; overflow: hidden
+}
+.datetime .plimg{ width: 18px; height: 18px; padding-right: 8rpx}
+.datetime .tm{
+  flex: 1; text-align: right; overflow: hidden
+}
+.datetime .tmimg{ width: 18px; height: 18px; padding-right: 8rpx; }
+
+.displayNo{ color: #999; padding: 20rpx 0 40rpx 0; width: 100%; text-align: center}
+
+    /**index.wxss**/  
+    .weui-tab{ width: 100%;}
+    .weui-navbar{  
+        width: 90%;
+        line-height: 80rpx;
+        background: #fff;
+        display: block;
+        z-index: 9999;
+        padding: 0 5%;
+        position: fixed
+    }  
+    .weui-navbar__item{  
+      font-size: 30rpx;  
+      display: inline-block;  
+      width: 50%;
+      color: #333;  
+      text-align: center;
+    }  
+    .weui-bar__item_on{ 
+      color: #00AC2C;  
+      border-bottom: 4rpx solid #00AC2C;
+    }  
+    .weui-tab__panel{ 
+      z-index: 9000;
+      margin-top: 55px;
+    }

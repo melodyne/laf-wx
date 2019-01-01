@@ -1,0 +1,30 @@
+<block url="" wx:for="{{list}}" wx:key="">
+    <view class="item">
+      <navigator url="../view/view?id={{item.id}}" class="navigator-item">
+        <view class="UserName">
+          <view class="UserPic">
+            <image src="{{item.headimgurl}}"></image>
+            <text>{{item.wxname}}</text>
+          </view>
+          <view class="UserDate-a" wx:if="{{item.rid == 1}}">
+              捡到如下物品
+          </view>
+          <view class="UserDate-b" wx:else>  
+              丢失如下物品
+          </view>
+        </view>
+        <text class="textCms">{{item.content}}</text>
+        <view class="viPhoto" wx:if="{{item.photo != null}}">
+            <view class="wiPhoto">
+              <block>
+              <image class="poster" src="{{picUrl}}{{item.photo}}" mode="aspectFill"></image>
+              </block>
+            </view>
+          </view>
+      <view class="datetime">
+          <label class="pl"><image src="../../image/pl.png" class="plimg"></image>{{item.plnum}}</label>
+          <label class="tm"><image src="../../image/time.png" class="tmimg"></image>{{item.datetime}}</label>
+      </view>  
+      </navigator>
+    </view>
+  </block>

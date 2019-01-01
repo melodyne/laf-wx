@@ -1,0 +1,29 @@
+<!--pages/about/about.wxml-->
+<loading hidden="{{loadingHide}}">
+  {{loadingText}}
+</loading>
+<view class="IndexHome">
+  <image src="../../image/logo.png" mode="widthFix" class="img"></image>
+</view>
+
+<view class="IndexList">
+  <view bindtap="callmeTap">
+    <image src="../../image/tel.png" class="telIco" mode="widthFix"></image>
+    <text class="tel">电话 / 0351-7171839</text>
+  </view>
+  <view>
+    <image src="../../image/weixin.png" class="weixinIco" mode="widthFix"></image>
+    <text class="map">微信 / 131-0000-0351</text>
+  </view>
+  <view>
+    <image src="../../image/email.png" class="eIco" mode="widthFix"></image>
+    <text class="email">邮件 / 114512039@QQ.Com</text>
+  </view>
+  <view>
+    <image src="../../image/map.png" class="mapIco" mode="widthFix"></image>
+    <text class="map">和平北路诚泰商务西区1010室</text>
+  </view>
+</view>
+<view class="footer">
+  @2013 互联创想 版权所有
+</view>

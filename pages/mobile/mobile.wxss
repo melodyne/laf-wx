@@ -1,0 +1,66 @@
+/* pages/mobile/mobile.wxss */
+page {
+  background-color: #F5F5F5;
+  height: 100%;
+  line-height: 1.6;
+}
+
+.mobileMain{
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 0 30rpx 0;
+  box-sizing: border-box;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.mbInput{
+  background: #fff;
+  width: 90%;
+  margin-bottom: 30rpx;
+  padding: 0 5%;
+  margin-top: 30rpx;
+  border-top: 2rpx #ECECEC solid;
+  border-bottom: 2rpx #ECECEC solid;
+  position:  relative
+}
+.tels{
+  border-bottom: 2rpx #F5F5F5 solid; padding: 25rpx 0
+}
+.xing{
+  border-bottom: 2rpx #F5F5F5 solid; padding: 25rpx 0
+}
+
+.msCode{
+  padding: 25rpx 0
+}
+
+.mbBtn{ width: 90%; margin: 40rpx auto 0}
+
+.mbBtn button::after {
+  border:0;
+}
+
+.mbBtn .vBtn_add{
+   border-radius: 100rpx; background: #FFF; border:2rpx solid #F1F1F1
+}
+.mbTxing{
+   width: 90%; background: #FFF5EC; padding:2% 5%; margin-bottom: 30rpx;
+   border-bottom: 2rpx #FFE2C8 solid; color: #FF8E28
+}
+button.Dtime{ position:  absolute; right: 40rpx; bottom: 20rpx; z-index: 999}

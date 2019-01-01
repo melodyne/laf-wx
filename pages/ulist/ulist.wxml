@@ -1,0 +1,25 @@
+<!--pages/ulist/ulist.wxml-->
+<view class="container">
+
+<!--index.wxml-->  
+<view class="weui-tab" >
+    <view class="weui-navbar">
+        <block wx:for-items="{{tabs}}" wx:key="{{index}}">
+            <view id="{{index}}" data-opid="{{openid}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                <view class="weui-navbar__title">{{item}}</view>
+            </view>
+        </block>
+    </view>
+    <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+            <include src="list-a.wxml" />
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+            <include src="list-a.wxml" />
+        </view>
+    </view>
+</view>
+
+
+
+</view>

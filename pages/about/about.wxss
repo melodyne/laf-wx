@@ -1,0 +1,13 @@
+/* pages/view/view.wxss */
+.viewNr{
+    width: 84%;
+    display:  block;
+    margin: 0 8%;
+    padding: 24rpx 0;
+    color: #333
+}
+.viewNr text{
+  width: 100%;
+  display: block;
+  text-indent: 25px;
+}

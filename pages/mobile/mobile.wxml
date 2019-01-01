@@ -1,0 +1,32 @@
+<!--pages/mobile/mobile.wxml-->
+<view class="mobileMain">
+
+<view class="mbTxing">
+    第一次发布需要填写个人信息
+</view>
+
+<form bindsubmit="formBindsubmit" bindreset="formReset">
+<view class="userinfo">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+
+<view class="mbInput">
+  <input name="avatarUrl" value="{{userInfo.avatarUrl}}" style="display:none" />
+  <input name="genDer" value="{{userInfo.gender}}" style="display:none" />
+  <input name="nickName" value="{{userInfo.nickName}}" style="display:none" />
+  <input class="tels" name="tel" placeholder="您的手机号码" bindinput="mobileInputEvent" type="number" maxlength="11" />
+  <input class="msCode" name="telCode" placeholder="请填写验证码" type="number" maxlength="5" />
+  <button size="mini" disabled="{{disabled}}" bindtap="reSendPhoneNum" class="Dtime">{{btnName}}{{time}}</button>
+</view>
+
+<view class="mbBtn">
+    <button class="vBtn_add" form-type="submit" bindtap="nextStep">提交保存</button>
+</view>
+</form>
+
+<view class="footer">
+  @2013 互联创想 版权所有
+</view>
+
+</view>

@@ -1,0 +1,18 @@
+ <view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" wx:for="{{items}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:key="">
+    <view class="content">
+        <navigator url="../view/view?id={{item.id}}" class="navigator-item">
+        <view class="viPhoto">
+            <view class="wiPhoto">
+                <view wx:if="{{item.photo != null}}">
+                  <image class="poster" src="{{picUrl}}{{item.photo}}" mode="aspectFill"></image>
+                </view>
+                <view class="noPhoto" wx:else>
+                  No.Photo
+                </view>
+            </view>
+          </view>
+          <text class="textCms">{{item.content}}</text>
+      </navigator>
+    </view>
+    <view class="del" catchtap="del" data-index="{{index}}" data-id="{{item.id}}">删除</view>
+  </view>

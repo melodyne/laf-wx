@@ -1,0 +1,19 @@
+<!--加载更多 模版-->
+<template name="loading">
+    <view class="weui-loadmore">
+        <view class="weui-loading"></view>
+        <view class="weui-loadmore__tips">..正在加载..</view>
+    </view>
+</template>
+
+<template name="nodata">
+    <view class="weui-loadmore">
+        <view class="weui-loadmore__tips">---- 我是有底线的 ----</view>
+    </view>
+</template>
+
+<template name="nsdata">
+    <view class="weui-loadmore">
+        <view class="weui-loadmore__tips">---- 暂无评论 ----</view>
+    </view>
+</template>

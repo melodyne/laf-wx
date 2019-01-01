@@ -1,0 +1,42 @@
+/* pages/about/about.wxss */
+.IndexHome{
+  width: 100%;
+  display: block;
+  background-color: #00AC2C;
+  height: 500rpx;
+  overflow: hidden;
+  text-align: center
+}
+.img{
+  width: 55%; margin: 0 auto; padding: 60rpx 0 0 0;
+}
+.IndexList{
+  width: 100%;
+  display: block;
+  margin-top: 40rpx;
+}
+.IndexList view{
+    border-bottom: 1px solid #F5F5F5;
+    width: 84%;
+    display:  block;
+    margin: 0 8%;
+    color: #333;
+    height: 100rpx;
+    line-height: 100rpx
+}
+.IndexList image.telIco{
+  width: 3%;
+  margin-right: 15rpx
+}
+.IndexList image.weixinIco{
+  width: 4%;
+  margin-right: 15rpx
+}
+.IndexList image.eIco{
+  width: 4%;
+  margin-right: 15rpx
+}
+.IndexList image.mapIco{
+  width: 3%;
+  margin-right: 15rpx
+}

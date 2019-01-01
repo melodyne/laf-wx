@@ -1,0 +1,82 @@
+/* pages/add/add.wxss */
+page {
+  background-color: #F5F5F5;
+  height: 100%;
+  line-height: 1.6;
+}
+.mbInput{
+  background: #fff;
+  width: 90%;
+  padding: 0 5%;
+  border-top: 2rpx #ECECEC solid;
+  border-bottom: 2rpx #ECECEC solid;
+}
+.tels{
+  border-bottom: 2rpx #F5F5F5 solid; padding: 25rpx 0
+}
+
+.section{
+  padding: 25rpx 0 10rpx 0; width: 100%;
+}
+
+.mbBtn{ width: 90%; margin: 40rpx auto 0}
+
+.mbBtn button::after {
+  border:0;
+}
+
+.mbBtn .vBtn_ok{
+   border: 0; background: #FF8F2B; color: #fff;
+   margin-top: 30rpx; margin-bottom: 20rpx; border-radius: 100rpx
+}
+
+.mbTxing{
+   width: 90%; background: #FFF5EC; padding:2% 5%; margin-bottom: 30rpx;
+   border-bottom: 2rpx #FFE2C8 solid; color: #FF8E28; font-size: 10pt
+}
+.mbTxing text{ width: 100%; display: block }
+.xuanBtn{
+  display: flex;
+  flex-direction: row;
+  padding: 0 40rpx
+}
+.diuBtn{
+  flex: 6; background: #FFF5EC;
+  height: 120rpx; line-height: 120rpx; border-radius:0px;
+}
+.is_checked{  
+  flex: 6; background: #40AF0A;
+  height: 120rpx; line-height: 120rpx; border-radius:0px; color: #fff
+}  
+.jianBtn{
+  flex: 6; background: #FFF5EC;
+  height: 120rpx; line-height: 120rpx; border-radius:0px;
+}
+.is_checksd{  
+  flex: 6; background: #40AF0A;
+  height: 120rpx; line-height: 120rpx; border-radius:0px; color: #fff
+}  
+.xuanLine{
+  flex: 1;
+  height: 120rpx;
+}
+.xuanBtn button::after {
+  border-radius:0px;
+}
+
+.uploadPic{ width: 20%; margin-right: 20rpx}
+.uploadPics{ width: 20%; height: 130rpx; margin-right: 20rpx;}
+.miaoshu{ padding-bottom: 20rpx}
+
+/* 获取当前位置 */
+.getGps{
+  width: 92%; background: #FCFCFC; border-top: 2rpx #ECECEC solid; padding:3% 4%; font-size: 14px; color: #999;   margin-top: 30rpx;
+}
+.getGps label{
+  margin-right: 20rpx;
+}
+image.mapIco{
+  width: 3%;
+  margin-right: 15rpx
+}
+

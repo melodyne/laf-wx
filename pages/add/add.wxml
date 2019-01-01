@@ -1,0 +1,45 @@
+<!--pages/add/add.wxml-->
+
+<loading hidden="{{loadingHide}}">
+  {{loadingText}}
+</loading>
+
+<view class="addMain">
+
+  <view class="mbTxing">
+    <text>【注】当前所发信息将覆盖周边50公里范围</text>
+    <text>【意】全太原市附近小程序基本都可以看到</text>
+    <text>【啦】违法广告信息将会被管理员永久禁言</text>
+  </view>
+  <form bindsubmit="formSubmit">
+    <input type="text" name="longitude" value="{{longitude}}" hidden="true"></input>
+    <input type="text" name="latitude" value="{{latitude}}" hidden="true"></input>
+    <input type="text" name="address" value="{{address}}" hidden="true"></input>
+    <view class="xuanBtn">
+      <button class="{{isChecked?'is_checked':'diuBtn'}}" bindtap="diushi">丢了东西</button>
+      <view class="xuanLine"></view>
+      <button class="{{isChecksd?'is_checksd':'jianBtn'}}" bindtap="jiandao">捡到东西</button>
+    </view>
+
+    <!-- 获取发布位置 -->
+    <view class='getGps' bindtap="clearGps">
+        <image src="../../image/map.png" class="mapIco" mode="widthFix"></image>
+        <label>当前位置</label><text>{{address}}</text>
+    </view>
+    <view class="mbInput">
+      <!--物品描述+图片上传-->
+      <view class="miaoshu">
+        <textarea placeholder="对物品的描述" class="section" maxlength="100" name="content" value='{{content}}' />
+        <view bindtap="checkimg">
+          <image wx:for="{{imglist}}" class="uploadPics" mode="aspectFill" src="{{item}}" wx:key=""></image>
+          <image src="../../image/upic.png" class="uploadPic" mode="widthFix"></image>
+        </view>
+      </view>
+    </view>
+
+    <view class="mbBtn">
+      <button class="vBtn_ok" formType="submit" loading="{{loading}}" disabled="{{disabled}}">提交发布</button>
+    </view>
+  </form>
+
+</view>
