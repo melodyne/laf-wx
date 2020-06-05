@@ -1,7 +1,7 @@
-const API_URL = 'https://bbs.bcb5.com/shiwu/';
+const API_URL = getApp().globalData.apiHost;
 Page({
   data: {
-    picUrl: "https://bbs.bcb5.com/",
+    picUrl: getApp().globalData.imgHost,
     openid: null,
     items: [],
     startX: 0, 

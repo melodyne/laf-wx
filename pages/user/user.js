@@ -1,5 +1,5 @@
 var app = getApp();
-const API_URL = 'https://bbs.bcb5.com/shiwu/';
+const API_URL = getApp().globalData.apiHost;
 Page({
   data: {
     userInfo: {},

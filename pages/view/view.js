@@ -1,11 +1,11 @@
 var app = getApp();
 var util = require("../../utils/util.js");
 var network = require('../../utils/network.js');
-const API_URL = 'https://bbs.bcb5.com/shiwu/';
+const API_URL = getApp().globalData.apiHost;
 Page({
   data: {
     views:'',
-    picUrl: "https://bbs.bcb5.com/",
+    picUrl: getApp().globalData.imgHost,
     openid:'',
     windowWidth:'',
     windowHeight:'',

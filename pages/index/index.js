@@ -1,4 +1,4 @@
-var url = "https://bbs.bcb5.com/shiwu/";
+var url = getApp().globalData.apiHost;
 var page = 0;
 var page_size = 5; 
 var GetList = function (that) {
@@ -54,7 +54,7 @@ var GetList = function (that) {
 }
 Page({
   data: {
-    picUrl: "https://bbs.bcb5.com/",
+    picUrl: getApp().globalData.imgHost,
     hidden: true,
     list: [],
     scrollTop: 0,

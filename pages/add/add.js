@@ -1,5 +1,5 @@
 var bmap = require('../../utils/bmap-wx.js');
-const API_URL = 'https://bbs.bcb5.com/shiwu/';
+const API_URL = getApp().globalData.apiHost;
 var wxMarkerData = [];  
 Page({
   data: {

@@ -21,7 +21,7 @@
 </view>
 
 <view class="mbBtn">
-    <button class="vBtn_add" form-type="submit" bindtap="nextStep">提交保存</button>
+    <button class="vBtn_add" form-type="submit" open-type="getUserInfo" bindtap="nextStep">提交保存</button>
 </view>
 </form>
 

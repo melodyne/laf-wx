@@ -2,7 +2,7 @@ var app = getApp()
 var maxTime = 60
 var currentTime = maxTime 
 var interval = null
-const API_URL = 'https://bbs.bcb5.com/shiwu/';
+const API_URL = getApp().globalData.apiHost;
 Page({
   data: {
     userInfo: {},

@@ -1,5 +1,10 @@
 //app.js
 App({
+  globalData:{
+    apiHost:'https://mhxj.jqyish.top/shiwu/',
+    imgHost:'https://mhxj.jqyish.top/',
+    userInfo: null
+  },
 
   //监听小程序初始化，当小程序初始化完成时会触发发，且全局只触发一次
   onLaunch: function() {
@@ -24,9 +29,5 @@ App({
         }
       })
     }
-  },
-
-  globalData: {
-    userInfo: null
   }
 })

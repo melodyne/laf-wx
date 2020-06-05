@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/add/add",
     "pages/mobile/mobile",
@@ -10,40 +10,46 @@
     "pages/lianx/lianx"
   ],
   "window": {
-    "navigationBarTextStyle": "#FFFFFF",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "附近失物认领",
     "navigationBarBackgroundColor": "#00AC2C",
     "backgroundColor": "#EEEEEE",
     "enablePullDownRefresh": true,
-    "backgroundTextStyle":"dark"
+    "backgroundTextStyle": "dark"
   },
   "tabBar": {
-      "color": "#b7b7b7",
-      "selectedColor": "#00AC2C",
-      "borderStyle": "white",
-      "backgroundColor": "#f5f5f5",
-      "list": [
-        {
-          "pagePath": "pages/index/index",
-          "iconPath": "image/12.png",
-          "selectedIconPath": "image/11.png",
-          "text": "首页"
-        },
-        {
-          "pagePath": "pages/add/add",
-          "iconPath": "image/32.png",
-          "selectedIconPath": "image/31.png",
-          "text": "发布"
-        },
-        {
-          "pagePath": "pages/user/user",
-          "iconPath": "image/42.png",
-          "selectedIconPath": "image/41.png",
-          "text": "个人"
-        }
-      ]
-    },
-    "networkTimeout": {
-      "request": 10000
+    "color": "#b7b7b7",
+    "selectedColor": "#00AC2C",
+    "borderStyle": "white",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/12.png",
+        "selectedIconPath": "image/11.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "iconPath": "image/32.png",
+        "selectedIconPath": "image/31.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "image/42.png",
+        "selectedIconPath": "image/41.png",
+        "text": "个人"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
+  }
 }
